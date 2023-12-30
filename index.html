@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+<div class="Task-1">
+  <h1>Task 1:</h1>
+   <label for="side1">Сторона 1:</label>
+   <input type="number" id="side1">
+   <label for="side2">Сторона 2:</label>
+   <input type="number" id="side2">
+   <label for="side3">Сторона 3:</label>
+   <input type="number" id="side3">
+   <button onclick="calculateByHeron()">Розрахувати</button>
+  <p>Площа трикутника: <span id="resultHeron"></span></p>
+</div>
+
+<div class="Task-2">
+  <h1>Task 2:</h1>
+   <label for="sideA">Сторона A:</label>
+   <input type="number" id="sideA">
+   <label for="sideB">Сторона B:</label>
+   <input type="number" id="sideB">
+   <label for="angleC">Кут між сторонами (в градусах):</label>
+   <input type="number" id="angleC">
+   <button onclick="calculateBySAS()">Розрахувати</button>
+  <p>Площа трикутника: <span id="resultSAS"></span></p>
+</div>
+  
+<div class="Task-3">
+  <h1>Task 3:</h1>
+   <label for="side">Сторона трикутника:</label>
+   <input type="number" id="side">
+   <label for="height">Висота на цю сторону:</label>
+   <input type="number" id="height">
+   <button onclick="calculateBySideHeight()">Розрахувати</button>
+  <p>Площа трикутника: <span id="resultSideHeight"></span></p>
+</div>
+
+<div class="Task-5">
+  <h1>Task 5:</h1>
+   <label for="side1Circle">Сторона 1:</label>
+   <input type="number" id="side1Circle">
+   <label for="side2Circle">Сторона 2:</label>
+   <input type="number" id="side2Circle">
+   <label for="side3Circle">Сторона 3:</label>
+   <input type="number" id="side3Circle">
+   <label for="radiusCircle">Радіус описаного кола:</label>
+   <input type="number" id="radiusCircle">
+   <button onclick="calculateBySidesAndRadius()">Розрахувати</button>
+  <p>Площа трикутника: <span id="resultSidesAndRadius"></span></p>
+</div>
+
+<div class="Task-6">
+  <h1>Task 6:</h1>
+   <label for="numberPalindrome">Введіть число:</label>
+   <input type="number" id="numberPalindrome">
+   <button onclick="checkPalindrome()">Перевірити</button>
+  <p id="resultPalindrome"></p>
+</div>
+
+<div class="Task-7">
+  <h1>Task 7:</h1>
+   <label for="word1">Перше слово:</label>
+   <input type="text" id="word1">
+   <label for="word2">Друге слово:</label>
+   <input type="text" id="word2">
+   <button onclick="checkAnagram()">Перевірити</button>
+  <p id="resultAnagram"></p>
+</div>
+
+<div class="Task-8">
+  <h1>Task 8:</h1>
+   <label for="fibIndex">Порядковий номер числа:</label>
+   <input type="number" id="fibIndex">
+   <button onclick="getFibonacciNumber()">Знайти число</button>
+  <p id="resultFibonacci"></p>
+</div>
+
+<div class="Task-9">
+  <h1>Task 9:</h1>
+   <label for="numberToCheck">Число для перевірки:</label>
+   <input type="number" id="numberToCheck">
+   <button onclick="checkFibonacci()">Перевірити</button>
+  <p id="resultFibCheck"></p>
+</div>
+
+<script src="./app.js"></script>
+
+</body>
+
+</html>
